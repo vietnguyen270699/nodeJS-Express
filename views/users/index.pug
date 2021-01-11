@@ -1,0 +1,9 @@
+h1 this is userlist 
+a(href="/users/create") New user
+
+form(action="users/seach" , method="GET")
+    input(type="text" name="q")
+    button Seach
+ul
+ each user in users
+    li= user.name
